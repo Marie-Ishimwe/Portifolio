@@ -1,11 +1,12 @@
-import { Home } from './components/home';
-// import About from "./components/ui/About";
-
+// import { Banner } from './components/Banner';
+import About from "./components/ui/About";
+import Navbar from './components/nav';
 function App() {
   return (
     <div className="font-bodyFont">
-      <Home/>
-      {/* <About /> */}
+      {/* <Banner/> */}
+      <About />
+      {/* <Navbar/> */}
     </div>
   );
 }

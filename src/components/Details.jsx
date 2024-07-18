@@ -57,7 +57,7 @@ const Details = () => {
             </div>
           </div>
           <div className="mt-4">
-            <button className="bg-color-Atlantis text-white px-4 sm:px-6 py-2 rounded-full flex items-center text-sm sm:text-base">
+            <button className="bg-color-Atlantis text-white px-4 sm:px-6 py-3 rounded-full flex items-center text-sm sm:text-base transition duration-300 ease-in-out transform hover:bg-color-Emperor hover:scale-105 hover:shadow-lg">
               <i className="bx bxs-download mr-2"></i> DOWNLOAD MY CV
             </button>
           </div>

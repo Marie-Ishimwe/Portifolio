@@ -1,62 +1,32 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
-    <div className="absolute top-0 w-full flex justify-between items-center p-4 z-50">
-      <button
-        className="bg-gray-800 text-white px-4 py-3 rounded-full focus:outline-none"
-        onClick={toggleMenu}
-      >
-        {isOpen ? (
-          <i className="bx bx-x text-3xl"></i>
-        ) : (
-          <i className="bx bx-menu text-3xl"></i>
-        )}
-      </button>
-      {isOpen && (
-        <div className="absolute top-16 left-4 bg-gray-900 p-4 rounded-lg shadow-lg">
-          <a
-            href="#home"
-            className="block text-white py-2 hover:bg-color-Atlantis items-center"
-          >
-            <i className="bx bx-home mr-2"></i>
-            <span className="text-yellow-500">HOME</span>
-          </a>
-          <a
-            href="#about"
-            className="block text-white py-5  hover:bg-color-Atlantis items-center"
-          >
-            <i className="bx bx-user mr-2"></i>
-            <span>ABOUT</span>
-          </a>
-          <a
-            href="#portfolio"
-            className="block text-white py-5  hover:text-color-Atlantis items-center"
-          >
-            <i className="bx bx-briefcase mr-2"></i>
-            <span>PORTFOLIO</span>
-          </a>
-          <a
-            href="#contact"
-            className="block text-white py-5  hover:text-color-Atlantis items-center"
-          >
-            <i className="bx bx-envelope mr-2"></i>
-            <span>CONTACT</span>
-          </a>
-          <a href="#blog" className="block text-white py-2 items-center">
-            <i className="bx bx-chat mr-2"></i>
-            <span>BLOG</span>
-          </a>
-        </div>
-      )}
-    </div>
+    <nav className="fixed bottom-2 lg:bottom-6 w-full overflow-hidden z-10">
+      <div className="w-full bg-color-Atlantis h-[75px] backdrop-blur-2xl rounded-full max-w-[460px] mx-auto px-5 flex justify-between items-center text-2xl text-white">
+        <a href="/" className="hover:text-gray-200 h-[60px] w-[60px] flex justify-center items-center">
+          <i className="bx bx-home"></i>
+        </a>
+        
+        <a href="/about" className="hover:text-gray-200  h-[60px] w-[60px] flex justify-center items-center">
+          <i className="bx bx-user"></i>
+        </a>
+        
+        <a href="/skills" className="hover:text-gray-200 h-[60px] w-[60px] flex justify-center items-center">
+          <i className="bx bx-code-alt"></i>
+        </a>
+
+        <a href="/portfolio" className="hover:text-gray-200 h-[60px] w-[60px] flex justify-center items-center">
+          <i className="bx bx-briefcase"></i>
+        </a>
+
+        <a href="/contact" className="hover:text-gray-200 h-[60px] w-[60px] flex justify-center items-center">
+          <i className="bx bx-envelope"></i>
+        </a>
+
+        <a href="/blog" className="hover:text-gray-200 h-[60px] w-[60px] flex justify-center items-center">
+          <i className="bx bx-chat"></i>
+        </a>
+      </div>
+    </nav>
   );
 };
 

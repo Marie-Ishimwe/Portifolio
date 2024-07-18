@@ -2,13 +2,14 @@ import Navbar from "./nav";
 import omg from '../assets/omg.png';
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
-const Home = () => {
+const Banner = () => {
   const [text] = useTypewriter({
     words: [
-      "a Flutter Developer",
+      // "a Flutter Developer",
+      "a Developer",
       "a UX/UI Designer",
       "a Game Designer",
-      "a Frontend Developer",
+      // "a Frontend Developer",
     ],
     loop: true,
     typeSpeed: 20,
@@ -45,13 +46,13 @@ const Home = () => {
             </p>
           </div>
           <div className="flex space-x-4 justify-center">
-            <button className="bg-color-Atlantis text-color-Nero px-6 py-3 rounded-full">
-              <i className="bx bxs-user text-md"></i>
-              MORE ABOUT ME
+            <button className="bg-color-Atlantis text-white px-4 sm:px-6 py-3 rounded-full flex items-center text-base transition duration-300 ease-in-out transform hover:bg-color-Emperor hover:scale-105 hover:shadow-lg">
+              <i className="bx bxs-user text-md mr-2"></i>
+              <span>MORE ABOUT ME</span>
             </button>
-            <button className="bg-transparent border-2 border-color-Atlantis text-color-Atlantis px-6 py-3 rounded-full">
-              <i className="bx bxs-briefcase text-md"></i>
-              PORTFOLIO
+            <button className="bg-transparent border-2 border-color-Atlantis text-color-Atlantis px-6 py-3 rounded-full transition duration-300 ease-in-out transform hover:bg-color-lighter_Atlantis hover:border-none hover:scale-105 hover:shadow-lg">
+              <i className="bx bxs-briefcase text-md mr-2"></i>
+              <span>PORTFOLIO</span>
             </button>
           </div>
         </div>
@@ -60,4 +61,4 @@ const Home = () => {
   );
 };
 
-export { Home };
+export { Banner };
