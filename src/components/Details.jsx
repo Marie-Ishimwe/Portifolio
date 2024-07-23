@@ -1,5 +1,5 @@
 import React from "react";
-import omg from '../assets/omg.png';
+import omg from "../assets/omg.png";
 
 const Details = () => {
   const personalInfo = [
@@ -38,21 +38,33 @@ const Details = () => {
         <div className="flex flex-col gap-4 w-full py-2 lg:py-14 text-left justify-center">
           <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4 p-3">
             {personalInfo.map((item, index) => (
-              <p key={index} className="text-sm sm:text-base text-color-Emperor">
+              <p
+                key={index}
+                className="text-sm sm:text-base text-color-Emperor"
+              >
                 <strong>{item.label}:</strong> {item.value}
               </p>
             ))}
           </div>
           <div className="p-3 text-color-Atlantis">
             <div className="flex flex-row justify-start items-center space-x-4">
-              <a href="#" className="flex items-center justify-center w-14 h-14 rounded-full bg-white shadow-md transition-all duration-300 ease-in-out hover:bg-color-Atlantis group">
-                <i className="bx bxl-linkedin text-2xl  group-hover:text-white transition-colors duration-300"></i>
+              <a
+                href="#"
+                className="flex items-center justify-center w-12 h-12 rounded-full bg-transparent border-2 border-color-Atlantis text-color-Atlantistransition-all duration-300 ease-in-out hover:bg-color-Atlantis group"
+              >
+                <i className="bx bxl-linkedin text-xl  group-hover:text-white transition-colors duration-300"></i>
               </a>
-              <a href="#" className="flex items-center justify-center w-14 h-14  rounded-full bg-white shadow-md transition-all duration-300 ease-in-out hover:bg-color-Atlantis group">
-                <i className="bx bxl-github text-2xl  group-hover:text-white transition-colors duration-300"></i>
+              <a
+                href="#"
+                className="flex items-center justify-center w-12 h-12  rounded-full bg-transparent border-2 border-color-Atlantis text-color-Atlantis transition-all duration-300 ease-in-out hover:bg-color-Atlantis group"
+              >
+                <i className="bx bxl-github text-xl  group-hover:text-white transition-colors duration-300"></i>
               </a>
-              <a href="#" className="flex items-center justify-center w-14 h-14  rounded-full bg-white shadow-md transition-all duration-300 ease-in-out hover:bg-color-Atlantis group">
-                <i className="bx bxl-behance text-2xl  group-hover:text-white transition-colors duration-300"></i>
+              <a
+                href="#"
+                className="flex items-center justify-center w-12 h-12  rounded-full bg-transparent border-2 border-color-Atlantis text-color-Atlantis transition-all duration-300 ease-in-out hover:bg-color-Atlantis group"
+              >
+                <i className="bx bxl-behance text-xl  group-hover:text-white transition-colors duration-300"></i>
               </a>
             </div>
           </div>

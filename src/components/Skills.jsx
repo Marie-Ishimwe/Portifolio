@@ -15,10 +15,15 @@ const Skills = () => {
 
   return (
     <div className="py-10 sm: px-8">
-      <h2 className="text-4xl font-bold text-center mb-8 text-color-Emperor">SKILLS</h2>
+      <h2 className="text-4xl font-bold text-center mb-8 text-color-Emperor">
+        SKILLS
+      </h2>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {skills.map((skill, index) => (
-          <div key={index} className="flex flex-col items-start p-sm text-color-Emperor">
+          <div
+            key={index}
+            className="flex flex-col items-start p-sm text-color-Emperor"
+          >
             <span className="font-bold ">{skill.name}</span>
             <div className="w-full bg-gray-200 rounded-full h-2 mb-4">
               <div
