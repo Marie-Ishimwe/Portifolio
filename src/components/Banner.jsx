@@ -14,7 +14,7 @@ const Banner = () => {
 
   return (
     <div
-      className="hero min-h-screen relative flex items-center justify-center bg-cover bg-center font-bodyFont"
+      className="flex hero min-h-screen relative items-center justify-center bg-cover bg-center font-bodyFont"
       id="banner"
       style={{
         backgroundImage: `url(${omg})`,
@@ -41,17 +41,19 @@ const Banner = () => {
             </p>
           </div>
           <div className="flex flex-col gap-4 md:flex-row justify-center">
-            <Link to="/about" className="inline-block">
-              <button className="bg-color-Atlantis text-white px-6 py-3 rounded-full transition duration-300 ease-in-out transform hover:bg-color-Emperor hover:scale-105 hover:shadow-lg">
+            <Link to="/about">
+              <button className="bg-color-Atlantis text-white px-10 md:px-6 py-3 rounded-full transition duration-300 ease-in-out transform hover:bg-color-Emperor hover:scale-105 hover:shadow-lg">
                 <i className="bx bxs-user text-md md:text-lg lg:text-xl mr-2"></i>
                 <span>MORE ABOUT ME</span>
               </button>
             </Link>
 
-            <button className="bg-transparent border-2 border-color-Atlantis text-color-Atlantis px-6 py-3 rounded-full transition duration-300 ease-in-out transform hover:bg-color-lighter_Atlantis hover:border-none hover:scale-105 hover:shadow-lg">
-              <i className="bx bxs-briefcase text-md md:text-lg lg:text-xl mr-2"></i>
-              <span>PORTFOLIO</span>
-            </button>
+            <Link to="/portfolio">
+              <button className="bg-transparent border-2 border-color-Atlantis text-color-Atlantis px-14 md:px-6 py-3 rounded-full transition duration-300 ease-in-out transform hover:bg-color-lighter_Atlantis hover:border-none hover:scale-105 hover:shadow-lg">
+                <i className="bx bxs-briefcase text-md md:text-lg lg:text-xl mr-2"></i>
+                <span>PORTFOLIO</span>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

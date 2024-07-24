@@ -1,8 +1,6 @@
-import React from "react";
-import Navbar from "../nav";
-import Details from "../Details";
-import Skills from "../Skills";
-import Experience from "../Expereince";
+import Navbar from "../components/nav";
+import Details from "../components/Details";
+import Experience from "../components/Expereince";
 
 const About = () => {
   return (
@@ -10,7 +8,6 @@ const About = () => {
       <Navbar />
       <Details />
       <Experience />
-      <Skills />
     </div>
   );
 };

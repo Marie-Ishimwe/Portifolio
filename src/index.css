@@ -3,3 +3,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.section-title {
+  @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-2 text-color-Emperor text-center;
+}
+
+.page-settup {
+  @apply min-h-screen bg-color-Nero flex flex-col items-center p-4 sm:p-6 md:p-10;
+}
