@@ -14,7 +14,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className="py-10 sm: px-8">
+    <div className="w-full py-10 sm: px-8">
       <h2 className="text-4xl font-bold text-center mb-8 text-color-Emperor">
         SKILLS
       </h2>

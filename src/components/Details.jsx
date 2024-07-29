@@ -1,27 +1,11 @@
+import React from "react";
 import omg from "../assets/omg.png";
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "../components/ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import PersonalInfo from "./PersonalInfo";
+import Qualifications from "./Qualifications";
+import Experience from "./Expereince";
 
 const Details = () => {
-  const personalInfo = [
-    { label: "First Name", value: "Aimee Marie" },
-    { label: "Last Name", value: "Ishimwe" },
-    { label: "Education", value: "Bsc Computer Science" },
-    { label: "Nationality", value: "Rwandan" },
-    { label: "Address", value: "NR3 Gatsata" },
-    { label: "Phone", value: "+250781490784" },
-    // { label: "Email", value: "ishimweaime77@gmail.com" },
-  ];
-  const socialIcons = [
-    { icon: "bxl-linkedin", href: "#" },
-    { icon: "bxl-github", href: "#" },
-    { icon: "bxl-behance", href: "#" },
-  ];
-
   return (
     <div className="page-settup">
       <h2 className="section-title">
@@ -43,38 +27,26 @@ const Details = () => {
             />
           </div>
         </div>
-        {/* Tabs and their respective content */}
-        <div className="flex flex-col gap-4 w-full py-2 lg:py-12 text-left justify-center">
-          <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-2 p-3">
-            {personalInfo.map((item, index) => (
-              <p
-                key={index}
-                className="text-sm sm:text-base text-color-Emperor"
-              >
-                <strong>{item.label}:</strong> {item.value}
-              </p>
-            ))}
-          </div>
-          <div className="p-3 text-color-Atlantis">
-            <div className="flex flex-row justify-start items-center space-x-4">
-              {socialIcons.map((item, index) => (
-                <a
-                  key={index}
-                  href={item.href}
-                  className="flex items-center justify-center w-12 h-12 rounded-full bg-transparent border-2 border-color-Atlantis text-color-Atlantis transition-all duration-300 ease-in-out hover:bg-color-Atlantis group"
-                >
-                  <i
-                    className={`bx ${item.icon} text-xl group-hover:text-white transition-colors duration-300`}
-                  ></i>
-                </a>
-              ))}
+        {/* Tabs */}
+        <div className="flex-1 w-full ">
+          <Tabs defaultValue="personal" className="w-full">
+            <TabsList className="grid w-full md:grid-cols-3">
+              <TabsTrigger value="personal" className="w-[200px] md:w-auto">Personal Info</TabsTrigger>
+              <TabsTrigger value="qualifications" className="w-[200px] md:w-auto">Qualifications</TabsTrigger>
+              <TabsTrigger value="experience" className="w-[200px] md:w-auto">Experience</TabsTrigger>
+            </TabsList>
+            <div className="mt-12 xl:mt-8">
+            <TabsContent value="personal">
+              <PersonalInfo />
+            </TabsContent>
+            <TabsContent value="qualifications">
+              <Qualifications />
+            </TabsContent>
+            <TabsContent value="experience">
+              <Experience />
+            </TabsContent>
             </div>
-          </div>
-          <div className="mt-4">
-            <button className="bg-color-Atlantis text-white px-4 sm:px-6 py-3 rounded-full flex items-center text-sm sm:text-base transition duration-300 ease-in-out transform hover:bg-color-Emperor hover:scale-105 hover:shadow-lg">
-              <i className="bx bxs-download mr-2"></i> DOWNLOAD MY CV
-            </button>
-          </div>
+          </Tabs>
         </div>
       </div>
     </div>
