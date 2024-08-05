@@ -1,4 +1,3 @@
-import React from "react";
 import omg from "../assets/omg.png";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import PersonalInfo from "./PersonalInfo";

@@ -11,7 +11,7 @@ const TabsList = React.forwardRef(({ className, ...props }, ref) => (
   <TabsPrimitive.List
     ref={ref}
     className={cn(
-      "inline-flex items-center justify-center bg-color-Nero md:bg-color-Atlantis p-1 text-color-Atlantis md:text-color-Gallery rounded-full",
+      "inline-flex items-center justify-center bg-color-Nero  p-1 text-color-Atlantis  rounded-full",
       className,
     )}
     {...props}
@@ -23,7 +23,7 @@ const TabsTrigger = React.forwardRef(({ className, ...props }, ref) => (
   <TabsPrimitive.Trigger
     ref={ref}
     className={cn(
-      "inline-flex items-center justify-center whitespace-nowrap rounded-full bg-muted px-3  py-1.5 text-base ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-color-Atlantis md:data-[state=active]:bg-color-Nero data-[state=active]:text-color-Nero md:data-[state=active]:text-color-Atlantis data-[state=active]:shadow-sm h-[48px]",
+      "inline-flex items-center justify-center whitespace-nowrap rounded-full bg-muted px-3  py-1.5 text-base ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-color-Atlantis  data-[state=active]:text-color-Nero  data-[state=active]:shadow-sm h-[48px]",
       className,
     )}
     {...props}
